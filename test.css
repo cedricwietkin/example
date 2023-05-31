@@ -19,12 +19,42 @@
   background-color: orange;
 }
 
+.adv-item:nth-child(1) {
+  background-color: #ff1a1a;
+  color: black;
+}
+
+.adv-item:nth-child(2) {
+  background-color: #ff3333;
+  color: black;
+}
+
+.adv-item:nth-child(3) {
+  background-color: #ff4d4d;
+  color: black;
+}
+
+.adv-item:nth-child(4) {
+  background-color: #ff6666;
+  color: black;
+}
+
+.adv-item:nth-child(5) {
+  background-color: #ff8080;
+  color: black;
+}
+
+.adv-item:nth-child(6) {
+  background-color: #ff9999;
+  color: black;
+}
+
 body {
   font: 100% "Space Mono", monospace;
   color: #6b717f;
   margin: 0;
   padding: 0;
-  background-color: #00e61a, #00cc33, #00b34d, #009966, teal, #006699, #004db3, #0033cc, #001ae6, blue, ", ";
+  background: white;
   overflow-x: hidden;
   padding: 50px;
 }
@@ -101,4 +131,10 @@ h3 {
 .messages {
   padding: 16px;
 }
+
+.advantages .adv-item {
+  border: 2px solid black;
+  margin-top: 3px;
+}
+
 /*# sourceMappingURL=test.css.map */

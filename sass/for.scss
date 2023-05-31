@@ -1,11 +1,13 @@
-$blue: #0000FF;
-$white: #FFFFFF;
+
+
+$red: red;
+$grey: black;
 
 @for $i from 1 through 6 {
-  $background-color: lighten($blue, 5% * $i);
-  $text-color: darken($white, 5% * $i);
+  $background-color: lighten($red, 5% * $i);
+  $text-color: darken($grey, 5% * $i);
   
-  ul li:nth-child(#{$i}) {
+  .adv-item:nth-child(#{$i}) {
     background-color: $background-color;
     color: $text-color;
   }
