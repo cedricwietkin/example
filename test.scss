@@ -10,7 +10,7 @@ body {
     color: #6b717f;
     margin: 0;
     padding: 0;
-    background-color: $body-gradient;
+    background: white;
     overflow-x: hidden;
     padding: $padding;
     main{
@@ -21,8 +21,6 @@ body {
         padding: $padding-footer;
     }
 }
-
-
 article {
         display: flex;
         flex-wrap: wrap;
@@ -85,4 +83,9 @@ h3 {
 
 .messages {
     padding: 16px;
+}
+.advantages{
+    .adv-items{
+        border: solid 1px;
+    }
 }

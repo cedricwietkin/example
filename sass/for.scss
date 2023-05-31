@@ -1,13 +1,12 @@
-$color-start: blue; // Couleur de début (rouge)
-$color-end: #00ff00; // Couleur de fin (vert)
-$gradient-steps: 10; // Nombre d'étapes du dégradé
-$step-size: 100% / $gradient-steps; // Calcul de la taille de chaque étape
+$blue: #0000FF;
+$white: #FFFFFF;
 
-$gradient-colors: (); // Variable pour stocker les différentes étapes du dégradé
-
-@for $i from 1 through $gradient-steps {
-  $color: mix($color-start, $color-end, ($i / $gradient-steps) * 100); // Mélange des couleurs
-  $gradient-colors: append($gradient-colors, $color, comma); // Ajout de la couleur à la variable
+@for $i from 1 through 6 {
+  $background-color: lighten($blue, 5% * $i);
+  $text-color: darken($white, 5% * $i);
+  
+  ul li:nth-child(#{$i}) {
+    background-color: $background-color;
+    color: $text-color;
+  }
 }
-
-$body-gradient: join($gradient-colors, ", "); // Création de la valeur de couleur du dégradé
