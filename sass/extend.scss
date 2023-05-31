@@ -1,0 +1,22 @@
+.message{
+    border: 1px solid #8C8C8C;
+    padding: 16px;
+    color: $color-warning;
+}
+.success {
+    background-color: $background;
+    @extend .message;
+}
+
+.error {
+    background-color: $background-error;
+    @extend .message;
+
+&:hover{
+    background-color: green;
+
+}}
+.warning {
+    background-color: orange;
+    @extend .message;
+}
